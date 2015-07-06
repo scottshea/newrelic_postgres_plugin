@@ -6,20 +6,20 @@
 ## http://docs.rubygems.org/read/chapter/20
 Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.rubygems_version = '1.3.5'
+  s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
+  s.rubygems_version = '2.4.6'
 
   ## Leave these as is they will be modified for you by the rake gemspec task.
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
-  s.name              = 'newrelic_postgres_plugin'
-  s.version           = '0.3.0'
+  s.name              = 'newrelic_postgres_instance_plugin'
+  s.version           = '0.1.0'
   s.date              = '2014-08-05'
-  s.rubyforge_project = 'newrelic_postgres_plugin'
+  s.rubyforge_project = 'newrelic_postgres_instance_plugin'
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
-  s.summary     = "New Relic Postgres plugin"
+  s.summary     = 'New Relic Postgres Instance plugin'
   s.description = <<-EOF
 This is the New Relic plugin for monitoring Postgres developed by Boundless Inc.
   EOF
@@ -27,9 +27,9 @@ This is the New Relic plugin for monitoring Postgres developed by Boundless Inc.
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
-  s.authors  = ["Matt Hodgson", "Jacob Elder"]
-  s.email    = 'matt@boundless.com'
-  s.homepage = 'http://boundless.com'
+  s.authors  = ['Scott Shea']
+  s.email    = 'scott.j.shea@gmail.com'
+  s.homepage = 'https://github.com/scottshea/newrelic_postgres_plugin'
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
@@ -40,12 +40,12 @@ This is the New Relic plugin for monitoring Postgres developed by Boundless Inc.
   # s.extensions = %w[ext/extconf.rb]
 
   ## If your gem includes any executables, list them here.
-  s.executables = ["pg_monitor"]
+  s.executables = ['pg_monitor']
 
   ## Specify any RDoc options here. You'll want to add your README and
   ## LICENSE files to the extra_rdoc_files list.
-  s.rdoc_options = ["--charset=UTF-8",
-                    "--main", "README.md"]
+  s.rdoc_options = ['--charset=UTF-8',
+                    '--main', 'README.md']
   s.extra_rdoc_files = %w[README.md LICENSE]
 
   s.add_dependency('newrelic_plugin', '~> 1.3', '>= 1.3.1')
