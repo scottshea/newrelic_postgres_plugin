@@ -1,5 +1,9 @@
-NewRelic Postgres Plugin
-========================
+NewRelic Postgres Plugin by Scott Shea
+======================================
+
+_Note: This is a fork of the excellent Go Boundless Postgres plugin found at https://github.com/GoBoundless/newrelic_postgres_plugin. 
+I will certainly do a pull request to ge the additional metrics into their plugin but due to a time constraint I am 
+publishing these as a different plugin_
 
 A NewRelic Platform Postgres Plugin
 
@@ -11,13 +15,17 @@ The New Relic Postgres Plugin enables integrated monitoring of your Postgres dat
 * BGWriter metrics
 * Tuple metrics
 * Transactions committed and rolled back
+* Bloat and Waste by table
+* Count of Seq Scans by table
+* Rows & Dead Rows by table
+* Record Count by table
 
 ## Requirements
 
 ### Proxy host
 
 You need a host to install the plugin on that is able to poll the desired Postgres database. That
-host also needs Ruby (tested with 2.0.0), and support for rubygems. Heroku is a great choice for this. A fully deployable example app is provided.
+host also needs Ruby (tested with 2.2.2), and support for rubygems. Heroku is a great choice for this. A fully deployable example app is provided.
 
 https://github.com/GoBoundless/heroku_postgres_monitor
 

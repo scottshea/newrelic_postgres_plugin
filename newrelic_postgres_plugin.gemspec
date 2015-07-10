@@ -27,6 +27,8 @@ This is the New Relic plugin for monitoring Postgres developed by Boundless Inc.
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
+  ## Scott Shea: I changed the author information for this as I am making
+  ## some changes that have not been pulled to the main app yet
   s.authors  = ['Scott Shea']
   s.email    = 'scott.j.shea@gmail.com'
   s.homepage = 'https://github.com/scottshea/newrelic_postgres_plugin'

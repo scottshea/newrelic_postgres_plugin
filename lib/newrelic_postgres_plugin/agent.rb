@@ -172,7 +172,7 @@ module NewRelic::PostgresPlugin
       def check_samples(last, current)
         return false if last.nil? # First sample?
         return false unless current.find { |k,v| last[k] > v }.nil? # Values have gone down?
-        return true
+        true
       end
 
       def backend_query
